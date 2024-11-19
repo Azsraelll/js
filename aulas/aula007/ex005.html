@@ -8,6 +8,7 @@
         body{
             background-color: lightblue;
             font-family: Arial, Helvetica, sans-serif;
+            color: white;
         }
     </style>
 </head>
@@ -15,9 +16,21 @@
     <h1>Iniciando os estudos de DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>aprendendo a usar <strong>DOM</strong> em JS</p>
-    <div>Clique aqui</div>
+    <div id="msg">Clique aqui</div>
     <script>
-        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        /*
+        var d = window.document.getElementById('msg')
+        window.document.write(p1.innerText) //Pega a variavel p1 e escreve na tela
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        document.write(p1.innerHTML) //Com innerHTML o write vem com a formatação HTML
+        d.style.background = 'lightgreen'
+        */
+
+        var d = document.querySelector('#msg')
+        d.style.color = 'blue'
     </script>
 </body>
 </html>
