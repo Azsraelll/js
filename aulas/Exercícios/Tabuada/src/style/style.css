@@ -16,11 +16,6 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
-#res{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px;
-}
 
 footer{
     color: white;
